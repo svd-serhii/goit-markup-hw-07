@@ -1,0 +1,226 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backdrop-color);
+  opacity: 1;
+  transition: opacity var(--timing-duration) var(--timing-function),
+    visibility var(--timing-duration) var(--timing-function);
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* Modal window */
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--timing-duration) var(--timing-function);
+  padding: 40px;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+/* Button close modal */
+
+.btn-close-wrap {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: color var(--timing-duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--btn-hover);
+  }
+}
+
+/* Modal Form */
+
+.modal-icon-close {
+  fill: currentColor;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.modal-form {
+  width: 448px;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--second-color);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  background-color: transparent;
+  transition: border var(--timing-duration) var(--timing-function);
+  &:focus {
+    border: 1px solid var(--overflow-color);
+    outline: transparent;
+  }
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: fill var(--timing-duration) var(--timing-function);
+  .modal-input:focus ~ & {
+    fill: var(--overflow-color);
+  }
+}
+
+.modal-field-text {
+  margin-bottom: 20px;
+}
+
+.modal-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  &:focus {
+    border: 1px solid var(--overflow-color);
+    outline: transparent;
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal-field-check {
+  margin-bottom: 30px;
+}
+
+/* Checkbox */
+
+.check-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+  span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--timing-duration) var(--timing-function);
+    transition: border-color var(--timing-duration) var(--timing-function);
+    .modal-check:checked + & {
+      background-color: var(--brand-color);
+      border: none;
+    }
+    .modal-check:focus + & {
+      border-color: var(--main-color);
+    }
+  }
+}
+
+.check-icon {
+  fill: transparent;
+  transition: fill var(--timing-duration) var(--timing-function);
+  .modal-check:checked + .check-text & {
+    fill: var(--accent-color);
+  }
+}
+
+.policy-agreement {
+  color: var(--overflow-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Button modal submit */
+
+.btn-modal {
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--accent-color);
+  padding: 10px 52px;
+  border: none;
+  transition: background-color var(--timing-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover);
+  }
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

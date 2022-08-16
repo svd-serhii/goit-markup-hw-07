@@ -1,0 +1,30 @@
+// Logo header
+.logo-header {
+  font-family: "Raleway", sans-serif;
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+  padding: 24px 0 25px;
+}
+
+.logo-header-span {
+  color: var(--main-color);
+}
+
+// Logo footer
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+  padding: 0;
+}
+
+.logo-footer-span {
+  color: var(--accent-color);
+}

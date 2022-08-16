@@ -1,0 +1,63 @@
+// Social networks for section Our Team
+
+.team-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-social-color);
+  transition: background-color var(--timing-duration) var(--timing-function),
+    color var(--timing-duration) var(--timing-function);
+  &:hover {
+    background-color: var(--brand-color);
+    color: var(--accent-color);
+  }
+}
+
+.team-soc-icon {
+  fill: currentColor;
+}
+
+// Social network for footer
+.footer-soc {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  transition: background-color var(--timing-duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color);
+  }
+}
+
+.footer-soc-icon {
+  fill: currentColor;
+}
+
+.footer-soc-wrap {
+  margin-top: 12px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
