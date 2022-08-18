@@ -1,23 +1,9 @@
 .features-list {
   display: flex;
   gap: 30px;
-  .title {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  .text {
-    font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
-  }
 }
 
-.icon-thumb {
+.features-list__icon-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,4 +11,19 @@
   margin-bottom: 30px;
   background: var(--portfolio-bcg-color);
   border-radius: 4px;
+}
+
+.features-list__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.features-list__text {
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
 }

@@ -1,6 +1,6 @@
 // Button for Hero section
 
-.hero-btn {
+.hero__btn {
   background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -22,7 +22,7 @@
 
 // Button for footer form
 
-.btn-send {
+.subscribe__btn {
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -45,13 +45,13 @@
   }
 }
 
-.btn-send-icon {
+.subscribe__btn-icon {
   fill: currentColor;
   margin-left: 10px;
 }
 
 // Button for Portfolio section
-.portfolio-btn {
+.filters__btn {
   color: var(--main-color);
   background-color: var(--portfolio-bcg-color);
   border-radius: 4px;
