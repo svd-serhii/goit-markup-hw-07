@@ -1,11 +1,7 @@
 // Logo header
 .logo {
   font-family: "Raleway", sans-serif;
-  font-style: Bold;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(26px, 1.19, 700, 0.03em);
   color: var(--brand-color);
   padding: 0;
 }

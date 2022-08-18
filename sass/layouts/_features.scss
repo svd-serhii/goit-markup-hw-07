@@ -14,10 +14,7 @@
 }
 
 .features-list__title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 700, 0.03em);
   text-transform: uppercase;
   margin-bottom: 10px;
 }

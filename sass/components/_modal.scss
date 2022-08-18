@@ -65,11 +65,8 @@
 }
 
 .modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(20px, 1.15, 700, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
 
@@ -82,10 +79,7 @@
 }
 
 .modal-label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(12px, 1.17, 400, 0.01em);
   color: var(--second-color);
   display: block;
   margin-bottom: 4px;
@@ -154,10 +148,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.7, 400, 0.03em);
   color: var(--second-color);
   span {
     width: 16px;
@@ -204,10 +195,7 @@
   border-radius: 4px;
   font-family: inherit;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
+  @include font(16px, 1.875, 700, 0.06em);
   color: var(--accent-color);
   padding: 10px 52px;
   border: none;

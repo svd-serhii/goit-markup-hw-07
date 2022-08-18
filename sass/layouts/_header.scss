@@ -13,9 +13,6 @@
 }
 
 .nav__list {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   margin-left: 95px;
   display: flex;
   gap: 50px;
@@ -32,9 +29,7 @@
 }
 
 .contact-nav__link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 1.14, 500, 0.02em);
   color: var(--second-color);
   display: flex;
   align-items: center;
@@ -52,6 +47,7 @@
 }
 
 .nav__link {
+  @include font(14px, 1.14, 500, 0.02em);
   color: var(--main-color);
   display: inline-block;
   padding: 32px 0;

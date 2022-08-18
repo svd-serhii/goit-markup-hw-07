@@ -1,16 +1,13 @@
 // Button for Hero section
 
 .hero__btn {
+  @include font(16px, 1.9, 700, 0.06em);
   background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: inherit;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--accent-color);
   padding: 10px 32px;
   transition: background-color var(--timing-duration) var(--timing-function);
@@ -23,19 +20,16 @@
 // Button for footer form
 
 .subscribe__btn {
+  @include font(16px, 1.875, 700, 0.06em);
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   font-family: inherit;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--accent-color);
   padding: 10px 28px;
   transition: background-color var(--timing-duration) var(--timing-function);
@@ -52,17 +46,14 @@
 
 // Button for Portfolio section
 .filters__btn {
+  @include font(16px, 1.6, 500, 0.03em);
   color: var(--main-color);
   background-color: var(--portfolio-bcg-color);
   border-radius: 4px;
   border-style: none;
   font-family: inherit;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
   cursor: pointer;
   padding: 6px 22px;
   transition: background-color var(--timing-duration) var(--timing-function),

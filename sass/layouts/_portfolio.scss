@@ -36,10 +36,7 @@
   top: 0;
   left: 0;
   position: absolute;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.03em;
+  @include font(18px, 2, 400, 0.03em);
   padding: 63px 24px;
   color: var(--accent-color);
   background-color: var(--overflow-color);
@@ -58,10 +55,7 @@
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
   .project-card__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(18px, 2, 700, 0.06em);
     margin-bottom: 4px;
     color: var(--main-color);
   }
