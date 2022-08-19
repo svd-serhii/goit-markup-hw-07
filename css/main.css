@@ -860,17 +860,17 @@ img {
   transform: translateY(100%);
   transition: transform var(--timing-duration) var(--timing-function);
 }
-.projects-item:hover .project-card__text {
+.projects__item:hover .project-card__text {
   transform: translateY(0%);
 }
 
-.project-card__wrap {
+.description-wrap {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
 }
-.project-card__wrap .project-card__title {
+.description-wrap .description-wrap__title {
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
@@ -878,10 +878,10 @@ img {
   margin-bottom: 4px;
   color: var(--main-color);
 }
-.project-card__wrap .project-card__type {
-  font-weight: 400;
+.description-wrap .description-wrap__type {
   font-size: 16px;
   line-height: 1.87;
+  font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--second-color);
 }/*# sourceMappingURL=main.css.map */

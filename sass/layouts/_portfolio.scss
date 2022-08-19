@@ -44,26 +44,23 @@
   height: 100%;
   transform: translateY(100%);
   transition: transform var(--timing-duration) var(--timing-function);
-  .projects-item:hover & {
+  .projects__item:hover & {
     transform: translateY(0%);
   }
 }
 
-.project-card__wrap {
+.description-wrap {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
-  .project-card__title {
+  .description-wrap__title {
     @include font(18px, 2, 700, 0.06em);
     margin-bottom: 4px;
     color: var(--main-color);
   }
-  .project-card__type {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
+  .description-wrap__type {
+    @include font(16px, 1.87, 400, 0.03em);
     color: var(--second-color);
   }
 }
